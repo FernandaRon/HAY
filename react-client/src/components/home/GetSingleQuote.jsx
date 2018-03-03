@@ -22,7 +22,7 @@ class GetSingleQuote extends React.Component {
       url: '/home',
       success: (data) => {
         data = data.map((quoteObj) => [quoteObj.quote, quoteObj.source]);
-        setInterval(() => this.randomQuote(data), 2000);
+        setInterval(() => this.randomQuote(data), 5000);
       },
       error: (xhr, status, err) => {
         console.error(err)
@@ -37,7 +37,7 @@ class GetSingleQuote extends React.Component {
 
   render() {
     return (
-      <div className="quotes">
+      <div>
         {this.state.quote}
       </div>
     );
