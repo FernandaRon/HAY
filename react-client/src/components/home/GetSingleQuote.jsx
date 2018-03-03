@@ -1,6 +1,8 @@
 import React from "react";
 import $ from "jquery";
 
+
+
 class GetSingleQuote extends React.Component {
   constructor(props) {
     super(props);
@@ -35,7 +37,7 @@ class GetSingleQuote extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="quotes">
         {this.state.quote}
       </div>
     );
