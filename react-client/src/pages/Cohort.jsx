@@ -7,7 +7,6 @@ import HeaderBar from "../components/home/HeaderBar.jsx";
 
 import MentorList from "../components/cohort/MentorList.jsx";
 import StudentList from "../components/cohort/StudentList.jsx";
-import ImageCollections from "../components/cohort/ImageCollections.jsx";
 import Profile from "./Profile.jsx"
 
 export default class Cohort extends React.Component {
@@ -55,7 +54,7 @@ export default class Cohort extends React.Component {
         </div>
         <MentorList mentors={this.state.mentors} match={this.props.match}/>
         <StudentList students={this.state.students} match={this.props.match}/>
-        <ImageCollections />
+
 
         <Route path={`${this.props.match.url}/:id`} render={(props) => <Profile {...props} data={this.state}/> } />
       </div>

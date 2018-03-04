@@ -3,8 +3,8 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 
+import Slideshow from "../components/home/Slideshow.jsx";
 import SingleQuote from "../components/home/GetSingleQuote.jsx";
-import HomeGallery from "../components/home/HomeGallery.jsx";
 import HolaCode from "../components/home/HolaCode.jsx";
 import HeaderBar from "../components/home/HeaderBar.jsx";
 
@@ -25,7 +25,7 @@ export default class Home extends React.Component {
           <SingleQuote />
         </div>
         <div>
-          <HomeGallery />
+          <Slideshow />
         </div>
       </div>
     );

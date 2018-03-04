@@ -150,7 +150,21 @@ border-bottom-left-radius: 25px;
   outline: thin ridge yellow;
 }
 
+#allImages{
+  box-shadow: 10px 8px 30px #fff;
+  margin: 25px 25px 25px 25px;
+  background-color: #92a8d1;
+  border: 8px ;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
 
+.gallery-images{
+  height: 128px;
+  width: 128px
+}
 /* Hide the images by default */
 .mySlides {
     display: none;
